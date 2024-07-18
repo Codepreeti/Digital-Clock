@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    background: black;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100vh;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rays {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 140vh;
+}
+
+.ray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(1, 1, 12, 0.968), rgba(32, 28, 147, 0.5), rgba(62, 147, 164, 0.5),  rgba(62, 147, 164, 0.5), rgba(238, 238, 242, 0.81));
+    animation: beat 1s linear infinite;
+}
+
+.ray:nth-child(1) { top: 70%; animation-delay: 0s; }
+.ray:nth-child(2) { top: 80%; animation-delay: 0.1s; }
+.ray:nth-child(3) { top: 90%; animation-delay: 0.2s; }
+.ray:nth-child(4) { top: 100%; animation-delay: 0.3s; }
+.ray:nth-child(5) { top: 110%; animation-delay: 0.4s; }
+.ray:nth-child(6) { top: 120%; animation-delay: 0.5s; }
+.ray:nth-child(7) { top: 130%; animation-delay: 0.6s; }
+.ray:nth-child(8) { top: 140%; animation-delay: 0.7s; }
+.ray:nth-child(9) { top: 150%; animation-delay: 0.8s; }
+.ray:nth-child(10) { top: 160%; animation-delay: 0.9s; }
+
+
+@keyframes beat {
+    0%, 100% { width: 60vh; }
+    50% { width: 100%; }
+}
+
+.bg-video video {
+    margin-top: 20vh;
+    margin-left: -20vh;
+    height: 75vh;
+    width: 65vw;
+}
+
+.time {
+    font-size: 50px;
+    color: antiquewhite;
+    font-family: 'DS-Digital', sans-serif;
+    margin-left: 36vh;
+    margin-top: -42vh;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('fonts/DS-DIGIT.TTF') format('truetype');
+}
