@@ -66,3 +66,147 @@ body {
     font-family: 'DS-Digital';
     src: url('fonts/DS-DIGIT.TTF') format('truetype');
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        width: 80vh;
+        height: auto;
+    }
+
+    .rays {
+        margin-left: 120vh;
+        height: 30vh;
+        width: 50vw;
+    }
+
+    .ray {
+        width: 100px;
+        height: 3px;
+    }
+
+    .bg-video video {
+        margin-top: 15vh;
+        margin-left: -15vh;
+        height: 60vh;
+        width: 50vw;
+    }
+
+    .time {
+        font-size: 30px;
+        margin-left: 23vh;
+        margin-top: -33vh;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 80vh;
+        height: auto;
+    }
+
+    .rays {
+        margin-left: 110vh;
+        height: 30vh;
+        width: 50vw;
+    }
+
+    .ray {
+        width: 100px;
+        height: 3px;
+    }
+
+    .bg-video video {
+        margin-top: 8vh;
+        margin-left: -15vh;
+        height: 80vh;
+        width: 70vw;
+    }
+
+    .time {
+        font-size: 35px;
+        margin-left: 28vh;
+        margin-top: -43vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 70vh;
+        height: auto;
+    }
+
+    .rays {
+        margin-left: 80vh;
+        margin-top: 8vh;
+        height: 30vh;
+        width: 40vw;
+    }
+
+    .bg-video video {
+        margin-top: 5vh;
+        margin-left: -10vh;
+        height: 90vh;
+        width: 80vw;
+    }
+
+    .time {
+        font-size: 30px;
+        margin-left: 30vh;
+        margin-top: -48vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 80vh;
+        height: auto;
+    }
+
+    .rays {
+        margin-left: 50vw;
+        margin-top: 25vh;
+        height: 25vh;
+        width: 40vw;
+    }
+
+    .bg-video video {
+        margin-top: 15vh;
+        margin-left: -25vh;
+        height: 90vh;
+        width: 100vw;
+    }
+
+    .time {
+        font-size: 25px;
+        margin-left: 5vh;
+        margin-top: -48vh;
+    }
+}
+
+@media (max-width: 365px) {
+    .container {
+        width: 80vh;
+        height: auto;
+    }
+
+    .rays {
+        margin-left: 50vw;
+        margin-top: 15vh;
+        height: 25vh;
+        width: 20vw;
+    }
+
+    .bg-video video {
+        margin-top: -1vh;
+        margin-left: -20vh;
+        height: 130vh;
+        width: 140vw;
+    }
+
+    .time {
+        font-size: 15px;
+        margin-left: 15vh;
+        margin-top: -67vh;
+    }
+}
