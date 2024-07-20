@@ -4,62 +4,49 @@ body {
     margin: 0;
 }
 
+h1 {
+    height: 8vh;
+    width: 29vw;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 5px;
+    margin-top: 4rem;
+    margin-left: 32rem;
+    position: absolute;
+
+}
+
 .container {
-    position: relative;
-    width: 100vh;
-    height: 300px;
+    position: absolute;
+    width: 95vw;
+    height: 70vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10rem;
 }
 
-.rays {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-left: 140vh;
+.container .bg-video {
+    position: relative;
+    margin-left: -4vh;
+    height: 6ovh;
+    width: 70vw;
 }
 
-.ray {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 170px;
-    height: 5px;
-    background: linear-gradient(90deg, rgba(1, 1, 12, 0.968), rgba(32, 28, 147, 0.5), rgba(62, 147, 164, 0.5),  rgba(62, 147, 164, 0.5), rgba(238, 238, 242, 0.81));
-    animation: beat 1s linear infinite;
-}
-
-.ray:nth-child(1) { top: 70%; animation-delay: 0s; }
-.ray:nth-child(2) { top: 80%; animation-delay: 0.1s; }
-.ray:nth-child(3) { top: 90%; animation-delay: 0.2s; }
-.ray:nth-child(4) { top: 100%; animation-delay: 0.3s; }
-.ray:nth-child(5) { top: 110%; animation-delay: 0.4s; }
-.ray:nth-child(6) { top: 120%; animation-delay: 0.5s; }
-.ray:nth-child(7) { top: 130%; animation-delay: 0.6s; }
-.ray:nth-child(8) { top: 140%; animation-delay: 0.7s; }
-.ray:nth-child(9) { top: 150%; animation-delay: 0.8s; }
-.ray:nth-child(10) { top: 160%; animation-delay: 0.9s; }
-
-
-@keyframes beat {
-    0%, 100% { width: 60vh; }
-    50% { width: 100%; }
-}
-
-.bg-video video {
-    margin-top: 20vh;
-    margin-left: -20vh;
-    height: 75vh;
-    width: 65vw;
+.container .bg-video video {
+    position: relative;
+    margin-left: -5vh;
+    height: 6ovh;
+    width: 60vw;
 }
 
 .time {
+    position: absolute;
     font-size: 50px;
     color: antiquewhite;
     font-family: 'DS-Digital', sans-serif;
-    margin-left: 36vh;
-    margin-top: -42vh;
+    margin-left: 44vh;
+    margin-top: -40vh;
 }
 
 @font-face {
@@ -67,146 +54,98 @@ body {
     src: url('fonts/DS-DIGIT.TTF') format('truetype');
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .container {
-        width: 80vh;
-        height: auto;
-    }
-
-    .rays {
-        margin-left: 120vh;
-        height: 30vh;
-        width: 50vw;
-    }
-
-    .ray {
-        width: 100px;
-        height: 3px;
-    }
-
-    .bg-video video {
-        margin-top: 15vh;
-        margin-left: -15vh;
-        height: 60vh;
-        width: 50vw;
-    }
-
-    .time {
-        font-size: 30px;
-        margin-left: 23vh;
-        margin-top: -33vh;
-    }
+.container .rays {
+    position: absolute;
+    width: 60vw;
+    height: 50vh;
+    margin-left: 82vh;
+    margin-top: 13vh;
 }
 
-@media (max-width: 991px) {
-    .container {
-        width: 80vh;
-        height: auto;
-    }
-
-    .rays {
-        margin-left: 110vh;
-        height: 30vh;
-        width: 50vw;
-    }
-
-    .ray {
-        width: 100px;
-        height: 3px;
-    }
-
-    .bg-video video {
-        margin-top: 8vh;
-        margin-left: -15vh;
-        height: 80vh;
-        width: 70vw;
-    }
-
-    .time {
-        font-size: 35px;
-        margin-left: 28vh;
-        margin-top: -43vh;
-    }
+.ray {
+    position: relative;
+    top: 0rem;
+    left: 0;
+    width: 170px;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(1, 1, 12, 0.968), rgba(32, 28, 147, 0.5), rgba(62, 147, 164, 0.5), rgba(62, 147, 164, 0.5), rgba(238, 238, 242, 0.81));
+    animation: beat 1s linear infinite;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 70vh;
-        height: auto;
-    }
-
-    .rays {
-        margin-left: 80vh;
-        margin-top: 8vh;
-        height: 30vh;
-        width: 40vw;
-    }
-
-    .bg-video video {
-        margin-top: 5vh;
-        margin-left: -10vh;
-        height: 90vh;
-        width: 80vw;
-    }
-
-    .time {
-        font-size: 30px;
-        margin-left: 30vh;
-        margin-top: -48vh;
-    }
+.ray:nth-child(1) {
+    top: 5%;
+    animation-delay: 0s;
 }
 
-@media (max-width: 480px) {
-    .container {
-        width: 80vh;
-        height: auto;
-    }
-
-    .rays {
-        margin-left: 50vw;
-        margin-top: 25vh;
-        height: 25vh;
-        width: 40vw;
-    }
-
-    .bg-video video {
-        margin-top: 15vh;
-        margin-left: -25vh;
-        height: 90vh;
-        width: 100vw;
-    }
-
-    .time {
-        font-size: 25px;
-        margin-left: 5vh;
-        margin-top: -48vh;
-    }
+.ray:nth-child(2) {
+    top: 10%;
+    animation-delay: 0.1s;
 }
 
-@media (max-width: 365px) {
-    .container {
-        width: 80vh;
-        height: auto;
+.ray:nth-child(3) {
+    top: 15%;
+    animation-delay: 0.2s;
+}
+
+.ray:nth-child(4) {
+    top: 20%;
+    animation-delay: 0.3s;
+}
+
+.ray:nth-child(5) {
+    top: 25%;
+    animation-delay: 0.4s;
+}
+
+.ray:nth-child(6) {
+    top: 30%;
+    animation-delay: 0.5s;
+}
+
+.ray:nth-child(7) {
+    top: 35%;
+    animation-delay: 0.6s;
+}
+
+.ray:nth-child(8) {
+    top: 40%;
+    animation-delay: 0.7s;
+}
+
+.ray:nth-child(9) {
+    top: 45%;
+    animation-delay: 0.8s;
+}
+
+.ray:nth-child(10) {
+    top: 50%;
+    animation-delay: 0.9s;
+}
+
+.ray:nth-child(11) {
+    top: 55%;
+    animation-delay: 1.1s;
+}
+
+.ray:nth-child(12) {
+    top: 60%;
+    animation-delay: 1.2s;
+}
+
+.ray:nth-child(13) {
+    top: 65%;
+    animation-delay: 1.3s;
+}
+
+
+@keyframes beat {
+
+    0%,
+    100% {
+        width: 60vh;
     }
 
-    .rays {
-        margin-left: 50vw;
-        margin-top: 15vh;
-        height: 25vh;
-        width: 20vw;
-    }
-
-    .bg-video video {
-        margin-top: -1vh;
-        margin-left: -20vh;
-        height: 130vh;
-        width: 140vw;
-    }
-
-    .time {
-        font-size: 15px;
-        margin-left: 15vh;
-        margin-top: -67vh;
+    50% {
+        width: 100%;
     }
 }
